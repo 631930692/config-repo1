@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: order
+  datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      username: root
+      password: Lzz100736!
+      url: jdbc:mysql://39.106.167.210:3306/springcloud_sell?characterEncoding=utf8&useSSL=false
+  jpa:
+    show-sql: true
+  rabbitmq:
+    addresses: 140.143.184.247
+    port: 5762
+    username: guest
+    password: guest
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+#修改寻找服务器的规则(默认是轮询规则)
+#PRODUCT:
+#  ribbon:
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+env:
+  dev
+girl:
+  name: lili
+  age: 21
